@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>2° Sistemas Vicente Rijo</title>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div id="menu">
+        <button id="button1" onclick="blink()">Piscar</button>
+        <button id="button2" onclick="changeBackgroundImage()">Mudar de Cor</button>
+        <button id="button3" onclick="showName()">Aumentar de tamanho</button>
+    </div>
+    <img src="imagem.jpg" alt="Imagem que gira e fica cinza" id="imagem">
+    <div id="name">Guilherme Dias</div>
+
+    <script>
+        function blink() {
+            document.getElementById("button1").style.backgroundColor = "transparent";
+            setTimeout(function () {
+                document.getElementById("button1").style.backgroundColor = "";
+            }, 100);
+        }
+
+        function changeBackgroundImage() {
+            document.body.style.backgroundImage = "url(background.jpg)";
+        }
+
+        function showName() {
+            document.getElementById("name").style.display = "block";
+        }
+    </script>
+</body>
+</html>

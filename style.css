@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(fundo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+nav {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+img:hover {
+    transform: rotate(180deg);
+    filter: grayscale(100%);
+}
+
+img:active {
+    transform: rotate(0deg);
+    filter: grayscale(0%);
+}
+
+#name {
+    display: none;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button1 {
+    transition: transform 0.5s, filter 0.5s;
+}
+
+#button1:hover {
+    animation: blink 1s infinite;
+    transform: rotate(180deg);
+    filter: grayscale(100%);
+}
+
+#button2:hover {
+    background-color: red;
+}
+
+#button3:hover {
+    transform: scale(1.2);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
